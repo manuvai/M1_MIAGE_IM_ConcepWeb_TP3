@@ -35,7 +35,7 @@
                             <label for="nb-persons">Nombre de personnes : </label>
                         </td>
                         <td>
-                            <input type="number" name="nb-persons" id="nb-persons" title="Veuillez renseigner le nombre de personnes voyageuses" placeholder="Ex : 2">(*)
+                            <input type="number" name="nb-persons" id="nb-persons" title="Veuillez renseigner le nombre de personnes voyageuses" placeholder="Ex : 2" required>(*)
                         </td>
                     </tr>
                     <tr>
@@ -43,7 +43,7 @@
                             <label for="reservation-date">Date de réservation : </label>
                         </td>
                         <td>
-                            <input type="date" name="reservation-date" id="reservation-date" title="Veuillez renseigner la date de réservaton de votre voyage">(*)
+                            <input type="date" name="reservation-date" id="reservation-date" title="Veuillez renseigner la date de réservaton de votre voyage" required>(*)
                         </td>
                     </tr>
                     <tr>
@@ -51,7 +51,7 @@
                             <label for="destination-choice">Destination choisie : </label>
                         </td>
                         <td>
-                            <select name="destination-choice" id="destination-choice" title="Veuillez renseigner la destination de votre choix">
+                            <select name="destination-choice" id="destination-choice" title="Veuillez renseigner la destination de votre choix" required>
                                 <option value="">Foix</option>
                                 <option value="">Sarlat</option>
                                 <option value="">Gorge de l’Ardèche</option>
@@ -70,7 +70,7 @@
                             <label for="appellation">Appellation : </label>
                         </td>
                         <td>
-                            <select name="appellation" id="appellation" title="Veuillez renseigner votre appellation">
+                            <select name="appellation" id="appellation" title="Veuillez renseigner votre appellation" required>
                                 <option value="">Mme</option>
                                 <option value="">M.</option>
                             </select>
@@ -82,7 +82,7 @@
                             <label for="nom">Nom : </label>
                         </td>
                         <td>
-                            <input type="text" name="nom" id="nom" title="Veuillez renseigner votre nom" placeholder="Entrez votre nom">(*)
+                            <input type="text" name="nom" id="nom" title="Veuillez renseigner votre nom" placeholder="Entrez votre nom" required>(*)
                         </td>
                     </tr>
                     <tr>
@@ -90,7 +90,7 @@
                             <label for="phone-number">Numéro de téléphone : </label>
                         </td>
                         <td>
-                            <input type="text" name="phone-number" id="phone-number" title="Veuillez renseigner votre numéro de téléphone" placeholder="Ex : 0123456789">(*)
+                            <input type="text" name="phone-number" id="phone-number" title="Veuillez renseigner votre numéro de téléphone" placeholder="Ex : 0123456789" required>(*)
                         </td>
                     </tr>
                     <tr>
@@ -98,7 +98,7 @@
                             <label for="email">Adresse e-mail : </label>
                         </td>
                         <td>
-                            <input type="email" name="email" id="email" title="Veuillez renseigner votre adresse e-mail" placeholder="Ex : prenom.nom@fai.com">(*)
+                            <input type="email" name="email" id="email" title="Veuillez renseigner votre adresse e-mail" placeholder="Ex : prenom.nom@fai.com" required>(*)
                         </td>
                     </tr>
                     <tr>
@@ -107,7 +107,7 @@
                         </td>
                         <td>
                             <label for="vacation-check">Ch&egrave;ques vacances</label>
-                            <input type="radio" name="payment-mode" id="vacation-check">
+                            <input type="radio" name="payment-mode" id="vacation-check" required>
                             (*)
                         </td>
                     </tr>
@@ -127,7 +127,7 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <input type="checkbox" name="accept-conditions" id="accept-conditions">
+                            <input type="checkbox" name="accept-conditions" id="accept-conditions" required>
                             <label for="accept-conditions">J’ai lu les conditions générales de vente. (*)</label>
                         </td>
                     </tr>
