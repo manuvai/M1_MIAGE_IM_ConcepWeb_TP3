@@ -5,6 +5,17 @@
     <meta charset="UTF-8">
     <title>Agence Pas Loin Pas Cher</title>
     <link rel="stylesheet" href="./style.css">
+    <script language="JavaScript">
+        let today = new Date;
+        let jour = today.getDate();
+        let mois = (today.getMonth()) + 1;
+        let annee = today.getFullYear();
+
+        let heure = today.getHours();
+        let minute = today.getMinutes();
+
+        date = `${jour}/${mois}/${annee} à ${heure}:${minute}`;
+    </script>
 </head>
 
 <body>
@@ -29,7 +40,10 @@
         <div class="content">
             <h2>Réservation confirmée !</h2>
             <p>
-                Nous confirmons avoir bien reçu votre réservation le XX/XX/XXXX à X:XX.
+                Nous confirmons avoir bien reçu votre réservation le 
+                <script language="JavaScript">
+                    document.write(date);
+                </script>.
             </p>
             <p>
                 A bientôt !
