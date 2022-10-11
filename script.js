@@ -18,3 +18,22 @@ function testDisponibilite(id) {
 
     return isValid;
 }
+
+function afficherIBAN() {
+    displayIBAN(true);
+}
+function cacherIBAN() {
+    displayIBAN(false);   
+}
+
+function displayIBAN(bol) {
+    let display;
+    if (bol) {
+        display = 'block';
+    } else {
+        display = 'none';
+    }
+
+    let elt = document.getElementById('divIBAN');
+    elt.style.display = display;
+}
