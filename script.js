@@ -4,14 +4,17 @@
 
 function testDisponibilite(id) {
     let element = parseInt(document.getElementById(id).value);
+    let isValid = true;
     if (isNaN(element)) {
-        return alert("Veuillez renseigner un vrai nombre");
+        isValid = false;
+        alert("Veuillez renseigner un vrai nombre");
+    } else if (element < 0) {
+        isValid = false;
+        alert("Veuillez renseigner un nombre positif");
+    } else if (element > 20) {
+        isValid = false;
+        alert("Veuillez renseigner un nombre inférieur à 20 personnes");
     }
-    if (element < 0) {
-        return alert("Veuillez renseigner un nombre positif");
-    }
-    if (element > 20) {
-        return alert("Veuillez renseigner un nombre inférieur à 20 personnes");
 
-    }
+    return isValid;
 }
