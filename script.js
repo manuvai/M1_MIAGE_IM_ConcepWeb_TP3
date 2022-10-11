@@ -10,4 +10,8 @@ function testDisponibilite(id) {
     if (element < 0) {
         return alert("Veuillez renseigner un nombre positif");
     }
+    if (element > 20) {
+        return alert("Veuillez renseigner un nombre inférieur à 20 personnes");
+
+    }
 }
