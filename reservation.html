@@ -108,9 +108,9 @@
                         </td>
                         <td>
                             <label for="virement">Virement</label>
-                            <input type="radio" name="payment-mode" id="virement" required>
+                            <input type="radio" name="payment-mode" id="virement" onclick="afficherIBAN()" required>
                             <label for="vacation-check">Ch&egrave;ques vacances</label>
-                            <input type="radio" name="payment-mode" id="vacation-check" required>
+                            <input type="radio" name="payment-mode" id="vacation-check" onclick="cacherIBAN()" required>
                             (*)
                             <div id="divIBAN">
                                 <label for="iban">IBAN : </label>
