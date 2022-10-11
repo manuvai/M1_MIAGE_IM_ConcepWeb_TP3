@@ -134,7 +134,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <input type="submit" onclick="if (!confirm('Veuillez confirmer votre choix')) { return false; }" value="Envoi" name="submit" id="submit" title="Cliquez ici si vous voulez soumettre votre réservation">
+                            <input type="submit" onclick="return (testDisponibilite('nb-persons') && confirm('Veuillez confirmer votre choix'))" value="Envoi" name="submit" id="submit" title="Cliquez ici si vous voulez soumettre votre réservation">
                         </td>
                         <td>
                             <input type="reset" value="Reset" name="reset" id="reset" title="Cliquez ici si vous vider le formulaire">
