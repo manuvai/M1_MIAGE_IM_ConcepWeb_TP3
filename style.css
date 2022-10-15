@@ -139,6 +139,9 @@ strong {
 
 a:hover {
     background-color: #E3B448;
+}
+
+a:visited {
     color:  #3A6B35;
 }
 
