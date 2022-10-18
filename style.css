@@ -167,7 +167,11 @@ h2 + p:first-letter {
 }
 
 .footer ul li {
-    flex-basis: 8.5em;
+    flex-basis: 9em;
     border: #000 2px solid;
     padding: 1em;
+}
+
+.footer ul li span {
+    font-weight: bold;
 }
