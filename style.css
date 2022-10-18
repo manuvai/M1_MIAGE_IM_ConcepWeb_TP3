@@ -168,6 +168,6 @@ h2 + p:first-letter {
 
 .footer ul li {
     flex-basis: 9em;
-    border: 2px solid;
+    border: #000 2px solid;
     padding: 1em;
 }
