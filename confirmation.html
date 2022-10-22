@@ -6,14 +6,18 @@
     <title>Agence Pas Loin Pas Cher</title>
     <link rel="stylesheet" href="./style.css">
     <script language="JavaScript">
+        const twoDigits = (time) => {
+          return ("0" + time).slice(-2);
+        }
+  
         let today = new Date;
-        let jour = today.getDate();
-        let mois = (today.getMonth()) + 1;
-        let annee = today.getFullYear();
-
-        let heure = today.getHours();
-        let minute = today.getMinutes();
-
+        let jour = twoDigits(today.getDate());
+        let mois = twoDigits((today.getMonth()) + 1);
+        let annee = twoDigits(today.getFullYear());
+  
+        let heure = twoDigits(today.getHours());
+        let minute = twoDigits(today.getMinutes());
+  
         date = `${jour}/${mois}/${annee} à ${heure}:${minute}`;
     </script>
 </head>
