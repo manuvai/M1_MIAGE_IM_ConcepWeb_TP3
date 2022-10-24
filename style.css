@@ -175,3 +175,7 @@ h2 + p:first-letter {
 .footer ul li span {
     font-weight: bold;
 }
+
+#divIBAN {
+    display: none;
+}
